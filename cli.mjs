@@ -34,7 +34,7 @@ const argv = yargs(hideBin(process.argv))
 const fortuneMessage = fortunateCow(argv.category);
 // TODO: Student Assignment
 // TODO: Put fortuneMessage inside a decorative box using boxen.
-const boxedMessage = `Using boxen, add a box around the results: "${fortuneMessage}"`; // replace this with your code here
+const boxedMessage = boxen(`${fortuneMessage}`, { padding: 3, borderStyle: 'double', title: 'result', titleAlignment: 'center' });
 // TODO: END STUDENT ASSIGNMENT
 
 console.log(boxedMessage)
